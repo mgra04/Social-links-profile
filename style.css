@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --White: #fff;
+  --Dark-Grey: #1f1f1f;
+  --Neon-Green: #c4f82a;
+  --Grey: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--Black, #141414);
+  color: var(--White);
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--Dark-Grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2.4rem;
+  padding: 4rem;
+  border-radius: 1.2rem;
+  max-width: 38.4rem;
+}
+
+.card-img {
+  width: 28.951%;
+  border-radius: 50%;
+  background: url(./assets/images/avatar-jessica.jpeg) lightgray 50% / cover
+    no-repeat;
+}
+
+.name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  line-height: 150%;
+}
+
+.details {
+  color: var(--Neon-Green);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.job {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.social-links {
+  min-width: 30.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.link-btn:link,
+.link-btn:visited {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background: var(--Grey);
+  padding: 1.4rem;
+  border-radius: 0.8rem;
+  transition: all 200ms ease-in;
+}
+
+.link-btn:hover,
+.link-btn:active {
+  background: var(--Neon-Green);
+  color: var(--Grey);
+}
+
+@media (max-width: 375px) {
+  .card {
+    padding: 2.4rem;
+    margin: 0 2.4rem;
+  }
+
+  .social-links {
+    min-width: 27.9rem;
+  }
+
+  .card-img {
+    width: 31.546%;
+  }
+}
